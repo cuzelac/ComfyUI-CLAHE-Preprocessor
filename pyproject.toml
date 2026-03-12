@@ -1,0 +1,6 @@
+[project]
+name = "comfyui-clahe-preprocessor"
+version = "1.0.0"
+description = "CLAHE preprocessing node for improving 3D mesh generation with TRELLIS"
+license = "MIT"
+requires-python = ">=3.10"
