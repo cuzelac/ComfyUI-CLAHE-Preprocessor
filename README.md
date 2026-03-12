@@ -12,7 +12,7 @@ The node applies four processing steps in order:
 
 1. **Weighted grayscale conversion** — Configurable channel mix (default: 15% R, 65% G, 20% B). Lets you emphasize the channel with the best structural detail for your content and suppress channels dominated by lighting artifacts.
 2. **Specular suppression** — Pixels above a configurable brightness percentile are blended toward a Gaussian-blurred local average. Flattens highlights without destroying surrounding texture contrast.
-3. **CLAHE** (Contrast Limited Adaptive Histogram Equalization) — Boosts local texture contrast (surface detail, fine geometry cues) without amplifying broad highlights. Default: clipLimit=3.0, tileGridSize=8x8.
+3. **[CLAHE](https://docs.opencv.org/4.x/d5/daf/tutorial_py_histogram_equalization.html)** (Contrast Limited Adaptive Histogram Equalization) — Boosts local texture contrast (surface detail, fine geometry cues) without amplifying broad highlights. Default: clipLimit=3.0, tileGridSize=8x8.
 4. **3-channel RGB output** — Converts the result back to 3-channel RGB so it's compatible with downstream nodes that expect color images (e.g., TRELLIS, which throws a `TypeError` on single-channel input).
 
 ## Node Inputs
