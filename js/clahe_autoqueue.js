@@ -10,7 +10,7 @@ app.registerExtension({
     name: "clahe_preprocess.autoqueue",
 
     async beforeRegisterNodeDef(nodeType, nodeData, app) {
-        if (nodeData.name !== "CLAHEPreprocess_TRELLIS") return;
+        if (nodeData.name !== "CLAHEPreprocess") return;
 
         const origOnCreated = nodeType.prototype.onNodeCreated;
         nodeType.prototype.onNodeCreated = function () {

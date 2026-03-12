@@ -14,8 +14,8 @@ class CLAHEPreprocess(io.ComfyNode):
     @classmethod
     def define_schema(cls):
         return io.Schema(
-            node_id="CLAHEPreprocess_TRELLIS",
-            display_name="CLAHE Preprocess (TRELLIS)",
+            node_id="CLAHEPreprocess",
+            display_name="CLAHE Preprocess",
             category="image/preprocessing",
             description="CLAHE preprocessing pipeline for improving 3D mesh generation with TRELLIS. "
                         "Converts to weighted grayscale, suppresses specular highlights, applies CLAHE, "

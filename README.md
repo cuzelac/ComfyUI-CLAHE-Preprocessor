@@ -57,7 +57,7 @@ OpenCV is the only dependency not bundled with ComfyUI:
 pip install opencv-python
 ```
 
-Restart ComfyUI. The node appears under **image/preprocessing** as **CLAHE Preprocess (TRELLIS)**.
+Restart ComfyUI. The node appears under **image/preprocessing** as **CLAHE Preprocess**.
 
 ## Requirements
 
